@@ -67,7 +67,6 @@
 \setlength{\parindent}{0pt}
 \renewcommand{\baselinestretch}{1.15}
 \usepackage[document]{ragged2e}
-\usepackage{tikz}
 
 % color
 \usepackage{xcolor}
@@ -79,6 +78,8 @@
 \DeclareCaptionFormat{ca}{\itshape\fontsize{10}{11}\selectfont#1#2#3}
 \captionsetup{format=ca}
 
+\usepackage{hyperref}
+\usepackage{tikz}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FOOTNOTE/ENDNOTE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -90,7 +91,7 @@
 ]{biblatex-chicago}
 \newcommand\mfs{\textsuperscript{,}\nobreak}
 % Those two packages clash but it doesn't really matter much
-\usepackage[bottom,multiple]{footmisc}
+\usepackage{footmisc}
 \usepackage{endnotes}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -123,13 +124,13 @@
     \noindent
     {\itshape%
       \fontsize{10}{10}\selectfont\textsuperscript{\@thefnmark}}
-  #1}
+  ##1}
  %%
  \begin{minipage}[t]{\textwidth}
    \vspace*{-1in}
    \begin{tikzpicture}
      \node[inner sep=0] (header) at (0,0){\includegraphics[width=\textwidth]{ca-sty/ca-header.pdf}};
-     \node[left,text width=4.11cm,align=center,yshift=-2pt] at (header.east){\color{ca}\sffamily\fontsize{12}{12}\selectfont\today};
+     \node[left,text width=4.4cm,align=center,yshift=-3pt] at (header.east){\color{ca}\sffamily\fontsize{12}{12}\selectfont\today};
   \end{tikzpicture}
   %%
   \vspace{16pt}\\ % 14 + 16 = 30 (= 6+24)?

@@ -2,6 +2,9 @@
 % LaTeX template for JCA
 % Kent K. Chang <kentkchang@berkeley.edu>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% copy project or download source
+% use XeLaTeX 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[14pt,twoside]{extarticle}
 \input{ca-sty/ca-sty}
 \bibliography{sample}
@@ -16,9 +19,6 @@
 \usepackage[english]{babel}
 \usepackage[autostyle]{csquotes}
 \usepackage[xspace]{ellipsis}
-\usepackage{hyperref}
-\usepackage{caption}
-\usepackage{subcaption}
 \usepackage{graphicx}
 \usepackage{enumitem}
 \usepackage{booktabs}
@@ -30,9 +30,7 @@
 % display title
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{Title for display, which can be longer or\\even contain linebreaks}
-\author{Author A\footnote{\label{inst_a}Institution A}\mfs\footnote{Institution B}~%
-  and Author B\footnoteref{inst_a}\mfs\footnote{Institution C}\\%
-  {\footnotesize\url{author.a@A.edu},\, \url{author.b@b.edu}}}
+\author{Kent K. Chang\footnote{\label{inst_a}Social and Decision Sciences, Carnegie Mellon University}\mfs\footnote{School of Information, University of California, Berkeley}~and Simon DeDeo\footnoteref{inst_a}\mfs\footnote{The Santa Fe Institute}\\{\footnotesize\url{kentkchang@berkeley.edu},\, \url{sdedeo@andrew.cmu.edu}}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \maketitle
 
